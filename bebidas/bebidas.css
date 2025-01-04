@@ -1,0 +1,283 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fundo1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fundomechendo 200s infinite linear;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(70, 28, 5, 0.774);
+    padding: 1%;
+}
+
+.header h1 {
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+}
+
+.imglogo {
+    max-width: 100%;
+    width: 14vw;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 2%;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
+}
+
+.bx-menu {
+    margin-top: 5%;
+    font-size: 3.5vw; 
+    color: rgb(163, 163, 163);
+    margin-right: 5%;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.bx-menu:hover {
+    color: rgb(255, 255, 255);
+}
+
+.menu-opcoes {
+    display: none;
+    position: absolute;
+    top: 18%;
+    right: 6%;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
+    background-color: rgba(22, 22, 22, 0.945);
+    color: rgb(196, 196, 196);
+    padding: 10px;
+    width: 20%;
+    z-index: 10;
+}
+
+.menu-opcoes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-opcoes ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-opcoes a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    padding: 2%;
+}
+
+.menu-opcoes a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.bloco-bebida {
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 24%;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+.bloco-bebida:hover {
+    transform: scale(1.03);
+}
+
+.bloco-bebida img {
+    width: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.bloco-bebida h2 {
+    margin: 5%;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.bloco-bebida .descricao {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.bloco-bebida .preco {
+    text-align: right;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.footer {
+    background-color: rgba(70, 28, 5, 0.774);
+    padding: 2% 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.footer_contact p {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.footer_social a {
+    margin: 0 5px;
+    font-size: 2.2em;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer_social a:hover {
+    color: #e67e22; 
+}
+
+.footer_social p {
+    font-size: 1.2em;
+}
+
+@keyframes fundomechendo {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        margin-top: 6%;
+        font-size: 4vw;
+    }
+
+    .menu-opcoes {
+        top: 13%;
+        right: 6%;
+        width: 35%;
+    }
+
+    .bx-menu {
+        margin-top: 6%;
+        font-size: 7vw;
+    }
+
+    .imglogo {
+        width: 27vw;
+    }
+
+    .cardapio {
+        flex-direction: row;
+    }
+
+    .bloco-bebida {
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .bloco-bebida h2 {
+        font-size: 1.2em;
+    }
+
+    .bloco-bebida .descricao {
+        font-size: 0.9em;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_social p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-opcoes {
+        top: 10%;
+        right: 23%;
+        width: 48%;
+    }
+
+    .header h1 {
+        font-size: 7vw;
+        margin-top: 2%;
+    }
+
+    .imglogo {
+        display: none;
+    }
+
+    .bx-menu {
+        margin-left: 1%;
+        margin-top: -2%;
+        font-size: 11vw;
+        margin-right: 0;
+    }
+
+    .bloco-bebida {
+        width: 75%;
+    }
+
+    .bloco-bebida h2 {
+        margin-left: -5%;
+        font-size: 1.2em;
+    }
+
+    .bloco-bebida .descricao {
+        font-size: 0.9em;
+    }
+
+    .bloco-bebida .preco {
+        bottom: -5%;
+        font-size: 1em;
+    }
+
+    .footer_contact p {
+        font-size: 0.8em;
+    }
+
+    .footer_social a {
+        font-size: 1.6em;
+    }
+
+    .footer_social p {
+        font-size: 0.8em;
+    }
+}
