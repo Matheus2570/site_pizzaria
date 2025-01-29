@@ -27,4 +27,4 @@ O projeto é composto pelos seguintes arquivos principais:
 
 1. Cole esse link no seu Google:
    ```bash
-   https://matheus2570.github.io/site_cardapio_labella_pizza/
+   https://matheus2570.github.io/site_pizzaria/
