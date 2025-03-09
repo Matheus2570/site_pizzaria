@@ -2,7 +2,7 @@
 
 Este é o projeto do cardápio online para a Labella Pizza, uma pizzaria que oferece uma variedade de pizzas, bebidas e acompanhamentos. O site é construído com HTML e CSS, proporcionando uma interface intuitiva e atraente para os clientes.
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 O projeto é composto pelos seguintes arquivos principais:
 
@@ -11,13 +11,13 @@ O projeto é composto pelos seguintes arquivos principais:
 - `script.js`: O arquivo de script para funcionalidades adicionais.
 - Imagens de pizzas e fundo que são usadas para embelezar o site.
 
-## Funcionalidades ✅
+## ✅ Funcionalidades 
 
 - **Visualização das Pizzas**: Cada pizza é apresentada com uma imagem, descrição e preço.
 - **Menu de Navegação**: Inclui links para diferentes categorias do cardápio, como Pizzas, Bebidas, Acompanhamentos e Combos.
 - **Design Responsivo**: O layout é adaptável, garantindo que o cardápio seja visualmente agradável em diferentes tamanhos de tela, incluindo dispositivos móveis.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
